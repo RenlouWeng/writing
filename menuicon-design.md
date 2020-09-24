@@ -1,4 +1,13 @@
-#实际操作
+##手机端Menu Icon设计
+##简介
+此文主要讲如何用css设计与制作menu icon。
+##想法
+1. 首先创建一个容器（menuicon）
+2. 往容器里塞两个小容器（menuicon-bread），通过绝对定位的方式将两个小容器定位在同一个位置。
+3. 再往两个小容器里面添加横线（menuicon-bread-crust）,然后通过`transform: translateY(数值px)`，方式将各自的横线上下位移，以此分开两条横线。
+4. 由于input已设置id属性和label标签关联起来，所以点击label，input会被触发(checked)，进而控制两个小容器。此时将两个小容器进行反方向旋转`transform: rotate(45deg)`&`transform: rotate(-45deg)`，并且将两条横线位移到原来的位置`transform: none`，即可实现`x`的效果。
+
+##实际操作
 
 ``` html
 <!DOCTYPE html>
@@ -91,3 +100,5 @@
     
 </html>
 ```
+##参考来源
+[苹果官网](https://www.apple.com/jp/)
