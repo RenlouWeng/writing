@@ -1,4 +1,4 @@
-##手机端Menu Icon设计
+##前端杂谈之menu icon设计
 ##简介
 此文主要讲如何用css设计与制作menu icon。
 ##想法

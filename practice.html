@@ -4,7 +4,9 @@
 </head>
 
 <style type="text/css" media="screen">
-       
+*{
+    margin: 0em;
+} 
 .menuicon{
     width: 48px;
     height: 48px;
@@ -70,10 +72,33 @@
     transform: translateY(3px);
 }
 
+#sub1
+{
+    position: absolute;
+    /* padding:5px; */
+    top:5px;
+    left:5px;
+    background-color: burlywood;
+}
+#parent{
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: gray;
+}
+#grand-parent{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: honeydew;
+    margin: 0em auto;
+}
+
 </style>
 
 <body>
-    <div class = "menuicon">
+    <!-- <div class = "menuicon">
         <label class = "menuicon-label" for="menuicon-label-state"></label>
         <input type="checkbox" id="menuicon-label-state">
         <span class="menuicon-bread menuicon-bread-top">
@@ -82,7 +107,15 @@
         <span class="menuicon-bread menuicon-bread-bottom">
             <span class="menuicon-bread-crust menuicon-bread-crust-bottom"></span>
         </span>
+    </div> -->
+<div id="grand-parent">
+    <div id="parent">
+        <p id="sub1">sub1</p>
+        <p id="sub2">sub2</p>
     </div>
+</div>
+    
+
 </body>
     
     
