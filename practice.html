@@ -11,7 +11,7 @@
     width: 48px;
     height: 48px;
     z-index: 1;  
-    position: absolute;
+    /* position: absolute; */
     background-color: #f5f5f5;
 }
 .menuicon-label{
@@ -80,6 +80,14 @@
     left:5px;
     background-color: burlywood;
 }
+#sub2
+{
+    position: absolute;
+    /* padding:5px; */
+    top:5px;
+    left:5px;
+    background-color: burlywood;
+}
 #parent{
     /* position: relative; */
     width: 200px;
@@ -98,7 +106,7 @@
 </style>
 
 <body>
-    <!-- <div class = "menuicon">
+    <div class = "menuicon">
         <label class = "menuicon-label" for="menuicon-label-state"></label>
         <input type="checkbox" id="menuicon-label-state">
         <span class="menuicon-bread menuicon-bread-top">
@@ -107,13 +115,14 @@
         <span class="menuicon-bread menuicon-bread-bottom">
             <span class="menuicon-bread-crust menuicon-bread-crust-bottom"></span>
         </span>
-    </div> -->
-<div id="grand-parent">
-    <div id="parent">
-        <p id="sub1">sub1</p>
-        <p id="sub2">sub2</p>
     </div>
-</div>
+
+    <!-- <div id="grand-parent">
+        <div id="parent">
+            <span id="sub1">sub1</span>
+            <span id="sub2">sub2</span>
+        </div>
+    </div> -->
     
 
 </body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<style type="text/css" media="screen">
+*{
+    margin: 0;
+    padding: 0;
+} 
+#son1
+{
+    position: absolute;
+    top:5px;
+    left:5px;
+    font-size: 3em;
+    background-color: #f5f5f5;
+}
+
+#parent{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #D5F3F4;
+}
+#grand-parent{
+    /* position: relative; */
+    width: 400px;
+    height: 400px;
+    background-color: #FBFBEA;
+    margin: 0 auto;
+}
+
+</style>
+
+<body>
+    <div id="grand-parent">
+        <div id="parent">
+            <span id="son1">son1</span>
+        </div>
+    </div>   
+</body>
+
+</html>
