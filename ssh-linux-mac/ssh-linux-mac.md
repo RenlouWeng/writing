@@ -39,6 +39,7 @@ chmod 600 /Users/username/.ssh/***.pem
 #### vscode连接到服务器
 
 接下来讲解如何通过客户端的vscode连接到linux。首先,要在vscode安装ssh development插件，安装完之后会出现以下这种小icon
+
 ![image info](./img/connect-icon.png)
 
 然后按comman+p键，输入`>Remote-SSH: Open Configuration File...`，然后选择`/Users/username/.ssh/config`。接下来就可以往里面填写有关亚马逊服务器相关的信息了。比如：
