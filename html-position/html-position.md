@@ -1,8 +1,8 @@
-#前端杂谈之position
+# 前端杂谈之position
 
 由于自己对position的具体用法总是一知半解，所以想通过书写的方式来加深对此知识点的理解，达到温故知新的目的。
 
-##Demo
+## Demo
 ```html
 <!DOCTYPE html>
 <html>
@@ -47,14 +47,14 @@
 </html>
 
 ```
-####Demo的原始效果
+#### Demo的原始效果
 ![image info](./img/position-demo.png)
 
 
-##fixed, absolute, relative, static的区别
+## fixed, absolute, relative, static的区别
 
 
-###static
+### static
 
 static最好理解，就是在position的默认值（什么都不设置的情况下）。
 
@@ -110,7 +110,7 @@ absolute顾名思义就是绝对的意思，但它到底对谁绝对呢？主要
 
 ```
 
-####son1设置absolute之后的效果
+#### son1设置absolute之后的效果
 ![image info](./img/position-absolute.png)
 
 注意：倘若不指定top，left，bottom，right的话，son1与原来的位置一致，不发生变化
@@ -166,13 +166,13 @@ absolute顾名思义就是绝对的意思，但它到底对谁绝对呢？主要
 </html>
 
 ```
-####son1设置成absolute且父级元素的position为relative或absolute之后的效果
+#### son1设置成absolute且父级元素的position为relative或absolute之后的效果
 ![image info](./img/position-absolute-2.png)
-###fixed
+### fixed
 
 fixed比较好理解，就是相对于浏览器窗口的位置，跟父元素没啥关系。其实，fixed是absolute的一种特殊用法，也就是absolute在父元素（或曾父等等）没有设置position的情况(即static以外)。
 
-###relative
+### relative
 
 relative是相对的意思。而它对谁相对呢？其实它相对于它自己的位置。比如，它本来在什么位置，如果用了
 ```html
