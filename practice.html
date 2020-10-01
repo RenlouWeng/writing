@@ -30,9 +30,15 @@
 /* 当checkbox被点击的时候，将menuicon-bread-top和menuicon-bread-bottom各自向反方向旋转45度，同时menuicon-bread-crust-top和menuicon-bread-crust-bottom移到中间的位置 */
 #menuicon-label-state:checked ~ .menuicon-bread-top{
     transform: rotate(45deg);
+    transition: transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s, -webkit-transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s;
+    transition: transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s;
+    transition: -webkit-transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s;
 }
 #menuicon-label-state:checked ~ .menuicon-bread-bottom{
     transform: rotate(-45deg);
+    transition: transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s, -webkit-transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s;
+    transition: transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s;
+    transition: -webkit-transform .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) .1008s;
 }
 #menuicon-label-state:checked ~ .menuicon-bread .menuicon-bread-crust-top{
     transform: none;
