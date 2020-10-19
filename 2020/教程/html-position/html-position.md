@@ -58,7 +58,7 @@
 
 static最好理解，就是在position的默认值（什么都不设置的情况下）。
 
-###absolute
+### absolute
 absolute顾名思义就是绝对的意思，但它到底对谁绝对呢？主要分两种情况：
 1. 它的父元素或曾父（曾曾父等等）不设置position（即既不是relative，也非absolute）的情况下，它是相对于浏览器的窗口进行绝对定位的。
 
